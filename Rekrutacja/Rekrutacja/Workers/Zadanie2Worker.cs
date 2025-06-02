@@ -1,4 +1,5 @@
 ﻿using Rekrutacja.Interfaces;
+using Rekrutacja.Shapes;
 using Rekrutacja.Workers;
 using Soneta.Business;
 using Soneta.Kadry;

@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Rekrutacja.Interfaces;
+using System;
 
-namespace Rekrutacja.Interfaces
+namespace Rekrutacja.Shapes
 {
     public class Circle : IShape
     {

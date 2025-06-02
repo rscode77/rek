@@ -1,4 +1,6 @@
-﻿namespace Rekrutacja.Interfaces
+﻿using Rekrutacja.Interfaces;
+
+namespace Rekrutacja.Shapes
 {
     public class Rectangle : IShape
     {
