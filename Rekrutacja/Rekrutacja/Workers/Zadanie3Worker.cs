@@ -67,10 +67,12 @@ namespace Rekrutacja.Workers
                     case ShapeEnum.Square:
                         ParamACaption = "A:";
                         ParamBVisible = false;
+                        ParamB = "";
                         break;
                     case ShapeEnum.Circle:
                         ParamACaption = "r:";
                         ParamBVisible = false;
+                        ParamB = "";
                         break;
                     case ShapeEnum.Triangle:
                         ParamACaption = "A:";
