@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Rekrutacja": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files (x86)\\Soneta\\enova365 2504.0.0-beta.163900\\SonetaExplorer.exe",
+      "commandLineArgs": "--database=\"DEMO\" --extpathall=\"G:\\RSCODE\\Rekrutacja\\Rekrutacja\\bin\\Debug\\net6.0\""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataForm
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.enova.pl/schema/form.xsd"
+    DataType="Rekrutacja.Workers.Zadanie2Worker+Zadanie2WorkerParams,Rekrutacja">
+	<Page Caption="Parametry" Priority="1">
+		<Stack>
+			<Field CaptionHtml="Kształt:" EditValue="{Shape}" Width="20"/>
+			<Field CaptionHtml="{ParamACaption}" EditValue="{ParamA}" Width="20" Visibility="{ParamAVisible}" Required="{ParamAVisible}"/>
+			<Field CaptionHtml="{ParamBCaption}" EditValue="{ParamB}" Width="20" Visibility="{ParamBVisible}" Required="{ParamBVisible}"/>
+			<Field CaptionHtml="Data:" EditValue="{Date}" Width="20" Required="true"/>
+		</Stack>
+	</Page>
+</DataForm>
