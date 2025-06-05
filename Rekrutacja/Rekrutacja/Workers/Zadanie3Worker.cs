@@ -100,16 +100,8 @@ namespace Rekrutacja.Workers
         [Context]
         public Zadanie3WorkerParams Params { get; set; }
 
-        public Pracownik[] Pracownicy
-        {
-            get
-            {
-                if (Params.Context.Get<Pracownik[]>(out var pracownicy))
-                    return pracownicy;
-
-                return Array.Empty<Pracownik>();
-            }
-        }
+        [Context]
+        public Pracownik[] Pracownicy { get; set; }
 
         [Action("Zadanie 3", Target = ActionTarget.Menu | ActionTarget.LocalMenu | ActionTarget.ToolbarWithText, Mode = ActionMode.SingleSession, Icon = ActionIcon.Coffee, Priority = 2)]
         public void Action()

@@ -26,10 +26,10 @@ namespace Rekrutacja.Workers
             [Caption("B:"), Required, DefaultWidth(20), Priority(20)]
             public double ParamB { get; set; }
 
-            [Caption("Data obliczeń:"), Required, DefaultWidth(20) , Priority(30)]
+            [Caption("Data obliczeń:"), Required, DefaultWidth(20), Priority(30)]
             public Date Date { get; set; }
 
-            [Caption("Operacja:"), Required, DefaultWidth(20) , Priority(40)]
+            [Caption("Operacja:"), Required, DefaultWidth(20), Priority(40)]
             public string Operation { get; set; }
         }
 
@@ -40,16 +40,8 @@ namespace Rekrutacja.Workers
         [Context]
         public Zadanie1WorkerParams Params { get; set; }
 
-        public Pracownik[] Pracownicy
-        {
-            get
-            {
-                if (Params.Context.Get<Pracownik[]>(out var pracownicy))
-                    return pracownicy;
-
-                return Array.Empty<Pracownik>();
-            }
-        }
+        [Context]
+        public Pracownik[] Pracownicy { get; set; }
 
         [Action("Zadanie 1", Target = ActionTarget.Menu | ActionTarget.LocalMenu | ActionTarget.ToolbarWithText, Mode = ActionMode.SingleSession, Icon = ActionIcon.Coffee, Priority = 1)]
         public void Action()
